@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    /* normalde biz gallery itemin icerisimnde ki imgye 100% verdik bundan  dolayı herhangi 1px degerinde bir border ekledıgımız zaman kutular yan yana gozukmez en sondakı bu durumu aştıgı için bir alt satırdan baslar .Bunun önüne gecmek için burda bu box-sizing: border-box; kullandık bu durum fazladan tum px lerı içine alıyor ve satırı aştırmıyor. */
+}
+
+#gallery {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.item-container {
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.gallery-item {
+    border: 1px solid #ccc;
+}
+
+.gallery-item:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.description {
+    text-align: center;
+    padding: 15px;
+}
